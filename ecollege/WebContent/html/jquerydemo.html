@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="/ecollege/bs/jquery-3.4.1.min.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function()
+
+	{
+
+		$('#b1').click(function() {
+			$("#p1").hide()
+		});
+		$('#b2').click(function() {
+			$("#p1").show();
+		});
+		$('#div1').click(function() {
+			$("#div2").slideToggle(100);
+		})
+
+	}
+
+	)
+</script>
+</head>
+<body>
+
+	<button id="b1">hide</button>
+	<button id="b2">show</button>
+
+
+	<p id="p1">Shown</p>
+	<div id="div1" style="width: 20%; height: 50px; background-color: cyan"></div>
+	<div id="div2"
+		style="width: 20%; height: 150px; background-color: green; display: none;"></div>
+
+</body>
+</html>

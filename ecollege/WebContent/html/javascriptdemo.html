@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>javascriptdemo</title>
+<script>
+	//window.alert("hello user")                          //used to display a message box, alert is of window object
+	function sayHello() 
+	{
+		nm = prompt("enter your name")                   //used to take input from user,gets stored in nm variable
+		alert("hello " + nm)
+	}
+	function changeColor(color)
+	{
+		document.bgColor=color                           //bgColor is the property of document object
+		
+	}
+	function showText()
+	{
+		
+		var data=document.getElementById("heading")      //getElementById() method links html and JS, now H1 tag will be refernced by 'data' variable
+		data.innerHTML="use of innerhtml"
+		//document.write("use of document.write,it creates a new window")
+		
+		/* The above statement can also be written as like below without using any variable
+		document.getElementById("heading").innerHTML="use of innerhtml" */
+	}
+</script>
+</head>
+<body>
+	<button onclick="sayHello()">Click</button><br>
+    Red<input type="radio" name="rd" value="red" onclick="changeColor(this.value)">
+    Green<input type="radio" name="rd" value="green" onclick="changeColor(this.value)">
+    <H1 id="heading" style="color:yellow"></H1>
+    
+    <button onclick="showText()">show</button>
+
+
+</body>
+</html>

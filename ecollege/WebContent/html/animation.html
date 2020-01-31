@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>animation</title>
+<script>
+	var imgArr = new Array(3)
+	imgArr[0] = "/ecollege/images/ta.jpeg"
+	imgArr[1] = "/ecollege/images/tfios.jpeg"
+	imgArr[2] = "/ecollege/images/wb.jpeg"
+	index = 0
+
+	function changeImage() {
+
+		document.getElementById("img1").src = imgArr[index]
+		index++
+		if (index > 2)
+			index = 0
+
+		setTimeout("changeImage()", 2000)
+	}
+</script>
+</head>
+<body onload="changeImage()">
+	<img id="img1" src="/ecollege/images/ta.jpeg"
+		style="width: 100px; height: 100px">
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>hyperlink</title>
+<script>
+function show() {
+	//alert("in function")
+	window.open("/ecollege/html/facilities.html","_parent","width=200,height=100")
+}
+
+function showText() {
+	
+	document.getElementById("p1").style.display="block"                          //block means show here
+}
+
+</script>
+</head>
+<body>
+<a href="javascript:show()">open</a>
+<p id="p1" style="display:none">
+
+Terms And Conditions are applied
+
+</p><br>
+
+<button type="button" onclick="showText()">Show</button>
+
+</body>
+</html>
